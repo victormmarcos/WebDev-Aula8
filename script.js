@@ -12,12 +12,15 @@ btnCriar.addEventListener('click', function(infosDoEvento){
     btnEditar.innerText = "Editar";
     btnEditar.addEventListener('click', function (){
         novoFilme.style.color = "white";
-        novoFilme.classList.add('fundo-preto')
+        novoFilme.classList.add('fundo-preto');
     })
 
-    const imagem = document.createElement('img')
-    imagem.src=""
+    const imagem = document.createElement('img');
+    imagem.src="";
 
+    novoFilme.innerHTML = `
+        <h1>$(inputusuario.value)</h1>;
+        <p>Avaliação do FIlme</p>`;
 
     listafilmes.append(novoFilme);
     novoFilme.append(btnEditar);
