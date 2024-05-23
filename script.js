@@ -15,6 +15,10 @@ btnCriar.addEventListener('click', function(infosDoEvento){
         novoFilme.classList.add('fundo-preto')
     })
 
+    const imagem = document.createElement('img')
+    imagem.src=""
+
+
     listafilmes.append(novoFilme);
     novoFilme.append(btnEditar);
 
